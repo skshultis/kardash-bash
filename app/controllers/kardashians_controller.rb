@@ -26,6 +26,16 @@ class KardashiansController < ApplicationController
     @kardashian = Kardashian.find(params[:id])
   end
 
+  def update
+    @kardashian = Kardashian.find(params[:id])
+
+    if @kardashian.update(kardashian_params)
+      redirect_to @kardashian
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @kardashian = Kardashian.find(params[:id])
     @kardashian.destroy
