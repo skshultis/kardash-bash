@@ -1,0 +1,14 @@
+<% @kardashian.errors.full_messages.each do |message| %>
+  <p>
+    <%= message %>
+  </p>
+  <% end %>
+<%= form_for @kardashian do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :quote %>
+  <%= f.text_area :quote %>
+  <%= f.label :photo %>
+  <%= f.text_field :photo %>
+  <%= f.submit %>
+<% end %>

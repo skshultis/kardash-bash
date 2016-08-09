@@ -1,0 +1,8 @@
+<h1>The Kardashians</h1>
+
+<% @kardashians.each do |kardashian| %>
+  <img src="<%= kardashian.photo %>">
+  <p><%= link_to kardashian.name, kardashian_path(kardashian) %></p>
+<% end %>
+
+<h2><%= link_to "add a Kardashian", new_kardashian_path %></h2>

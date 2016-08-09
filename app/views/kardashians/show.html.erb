@@ -1,0 +1,13 @@
+<h1>Showing one of the awful Kardashian girls</h1>
+
+<h2><%= @kardashian.name %></h2>
+<img src="<%= @kardashian.photo %>">
+
+<p>
+  <strong><%= @kardashian.quote %></strong>
+</p>
+
+<p><%= link_to "edit this Kardashian", edit_kardashian_path(@kardashian) %></p>
+<p><%= link_to 'delete this Kardashian', kardashian_path(@kardashian), method: :delete, data:{confirm: "Are you sure you want to delete this Kardashian?"} %></p>
+
+<p><%= link_to 'back', kardashians_path %></p>
