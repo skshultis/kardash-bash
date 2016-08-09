@@ -14,6 +14,7 @@ class KardashiansController < ApplicationController
 
   def create
     @kardashian = Kardashian.new(kardashian_params)
+
     if @kardashian.save
       redirect_to @kardashian, notice: "you created Kardashian: #{@kardashian.name}"
     else
@@ -26,7 +27,13 @@ class KardashiansController < ApplicationController
   end
 
   def destroy
+    @kardashian = Kardashian.find(params[:id])
     @kardashian.destroy
     redirect_to kardashians_path
+  end
+
+  private
+  def kardashian_params
+    params.require(:kardashian).permit(:name, :quote, :photo)
   end
 end
