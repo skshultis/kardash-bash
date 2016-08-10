@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
 
     def create
       @kardashian = Kardashian.find(params[:kardashian_id])
-      @comment = @kardashian.comments.create(comment_params)
+      @comment = @kardashian.comments.create!(comment_params.merge(user: current_user))
       redirect_to kardashian_path(@kardashian)
     end
 
