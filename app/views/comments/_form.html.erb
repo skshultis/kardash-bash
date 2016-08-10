@@ -1,15 +1,16 @@
-<%= form_for ([@kardashian, @comment]) do |f| %>
+<%= form_for([@kardashian, @comment]) do |f| %>
 
-  <p>
-    <%= f.label :comment %>
-    <%= f.text_area :comment %>
-  </p>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
 
-  <p>
-    <%= f.submit %>
-  </P>
+<p>
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+</p>
+
+<p>
+  <%= f.submit %>
+</P>
 <% end %>

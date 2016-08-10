@@ -1,14 +1,3 @@
-<%= form_for :comment do |f| %>
-  <p>
-    <%= f.label :comment %>
-    <%= f.text_area :comment %>
-  </p>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+<h2>New Comment</h2>
 
-  <p>
-    <%= f.submit %>
-  </P>
-<% end %>
+<%= render 'form' %>
