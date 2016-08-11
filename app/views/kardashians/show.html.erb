@@ -1,11 +1,10 @@
-<!-- <img class="butts" src="http://i.imgur.com/Unk2AN0.jpg" alt="Kim and multi ethnic butts" title="Kim and multi ethnic butts"> -->
-
 <h1><%= @kardashian.name %></h1>
+<h2><%= @kardashian.quote %></h2>
 <img src="<%= @kardashian.photo %>">
 
 <p><%= link_to 'edit this Kardashian ', edit_kardashian_path(@kardashian) %><%= link_to 'delete this Kardashian', kardashian_path(@kardashian), method: :delete, data:{confirm: "Are you sure you want to delete this Kardashian?"} %></p>
 
-<h2><%= @kardashian.quote %></h2>
+
 
 <h3 class="c_header">Comments</h3>
 <p class="c_link"><%= link_to "be rude. say literally anything.", new_kardashian_comment_path(@kardashian) %></p>
@@ -13,7 +12,7 @@
   <% @kardashian.comments.each do |comment| %>
       <p><%= comment.name %></p>
       <p> <%= comment.text %></p>
-      <%= link_to "this is too ridiculous", [comment.kardashian, comment], method: :delete %>
+      <%= link_to "this is too ridiculous", [comment.kardashian, comment], method: :delete, :class=>"link"%>
   <% end %>
 </ul>
 
