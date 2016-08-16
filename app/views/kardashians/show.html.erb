@@ -2,10 +2,6 @@
 <h2><%= @kardashian.quote %></h2>
 <img src="<%= @kardashian.photo %>">
 
-<p><%= link_to 'edit this Kardashian ', edit_kardashian_path(@kardashian) %><%= link_to 'delete this Kardashian', kardashian_path(@kardashian), method: :delete, data:{confirm: "Are you sure you want to delete this Kardashian?"} %></p>
-
-
-
 <h3 class="c_header">Comments</h3>
 <p class="c_link"><%= link_to "be rude. say literally anything.", new_kardashian_comment_path(@kardashian) %></p>
 <ul class="comment">
