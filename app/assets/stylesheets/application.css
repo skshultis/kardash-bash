@@ -2,6 +2,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  background-color: black;
 }
 img {
   height: 350px;
@@ -9,24 +10,32 @@ img {
 }
 h1 {
   font-size: 58px;
+  color: lemonchiffon;
 }
 h2.indexhead {
   font-size: 35px;
+  color: lemonchiffon;
 }
 h3.c_header {
   text-align: center;
+  color: lemonchiffon;
   font-size: 42px;
+
+}
+a {
+  font-size: 38px;
+  text-decoration: none;
+  color: #2bffd5;
 }
 a:hover {
   text-decoration: line-through;
+  color: #2bffd5;
 }
 ul.comment {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   padding: 0px;
-}
-a {
-  text-decoration: none;
+  color: lemonchiffon;
 }
 div.dashedit {
   display: block;
@@ -40,4 +49,5 @@ div.dashedit {
 p {
   margin: 0px;
   text-align: center;
+  color: lemonchiffon;
 }
