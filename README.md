@@ -1,24 +1,3 @@
-# README
+For this ruby on rails project, I created an entertainment app around the public's need to voice its frustration and disgust with the Kardashian family and their growing entourage. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Note: Being robbed at gunpoint is not a joke; this app was intended to make light of only vapid, nonviolent incidents and statements surrounding the Kardashians.
