@@ -8,4 +8,4 @@ Rails.application.routes.draw do
   get 'hi/index'
   root 'hi#index'
 
-end
+end 
